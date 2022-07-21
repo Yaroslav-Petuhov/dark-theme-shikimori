@@ -1,7 +1,6 @@
 /*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/master/LICENSE */
 
 /* Modified by valsoray with love ♡ | https://shikimori.one/valsoray */
-/* Modified styles on the bottom */
 
 /* User-Agent Style */
 html {
@@ -1204,9 +1203,7 @@ html[data-color-mode="light"] {
 .l-top_menu-v2 .submenu {
     background-image: initial;
     background-color: rgb(62, 67, 70);
-    border-bottom-color: rgb(113, 105, 93);
-    border-left-color: rgb(113, 105, 93);
-    border-right-color: rgb(113, 105, 93);
+    border: none;
 }
 .l-top_menu-v2 .submenu > a {
     color: rgb(232, 230, 227);
@@ -1220,7 +1217,7 @@ html[data-color-mode="light"] {
 @media screen and (min-width: 768px) {
     .l-top_menu-v2 .submenu > a:hover {
         background-image: initial;
-        background-color: rgb(24, 26, 27);
+        background-color: rgb(43, 47, 49);
         color: rgb(211, 207, 201);
     }
     .l-top_menu-v2 .submenu > a:active {
@@ -2619,7 +2616,7 @@ html[data-color-mode="light"] {
 }
 .b-anime_status_tag.other {
     background-color: rgb(82, 95, 109);
-    border-color: rgb(102, 95, 84);
+    border-color: rgb(99, 115, 132);
     color: rgb(232, 230, 227);
 }
 @media screen and (min-width: 1024px) {
@@ -3708,6 +3705,7 @@ code.b-code_inline {
 }
 .b-collection_search .field input {
     border-color: rgba(70, 76, 79, 0.4);
+    background-color: rgb(24, 26, 27);
 }
 .b-collection_search .field input::-webkit-input-placeholder {
     color: rgb(182, 176, 166);
@@ -6585,7 +6583,7 @@ code.b-code_inline {
 }
 .b-link_button.dark {
     background-color: rgb(54, 68, 82);
-    border-color: rgb(114, 106, 94);
+    border-color: rgb(62, 77, 93);
     color: rgb(232, 230, 227);
 }
 @media screen and (min-width: 1024px) {
@@ -10025,6 +10023,7 @@ header.head .notice {
 .tooltip-arrow {
     background-image: url("https://shikimori.one/assets/bubble/popup-arrow-left.png");
     background-color: initial;
+    filter: invert(90%);
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
     .tooltip-arrow {
@@ -10035,6 +10034,7 @@ header.head .notice {
 .tooltip-left .tooltip-arrow {
     background-image: url("https://shikimori.one/assets/bubble/popup-arrow-right.png");
     background-color: initial;
+    filter: invert(90%);
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
     .tooltip-left .tooltip-arrow {
@@ -10042,37 +10042,8 @@ header.head .notice {
         background-color: initial;
     }
 }
-.dropshadow-top {
-    background-image: url("https://shikimori.one/assets/bubble/dropshadow/top.png");
-    background-color: transparent;
-}
-.dropshadow-top-right {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4yNDkgLTAuNjE0IC0wLjY3MiAwLjAwMCAxLjAzNSAtMC42NDYgMC4yODggLTAuNjY0IDAuMDAwIDEuMDIwIC0wLjYzNiAtMC42MDkgMC4yNTAgMC4wMDAgMC45OTQgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQk1BQUFBVENBWUFBQUJ5VURiTUFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBS1JKUkVGVWVOck1rOTBLd0NBSWhXY0ZZKy8vdmpxQ0FuZFNhejhYRTRJYWR2clVuVzM3YTFCYk91UkxzY2ZDVlNndENNaXFXSFl1M1JZdFRwbWl2Z3M4THBGWUNoTEVFSEFGczBGbjdTbkljY25velFBcTJUNzVSV2hoUDVEVnhRdkRDSHQyQkwySktJY3o5cXpUcFlEUzdXMXBkQXpKa2FBN2tLTHNSSENab1F3eFNyejBzSk1SMEpIeUxjTVFYTG9DUmhjNE13eGw2azNMNkpxT3JKS3NPQVVZQUlsTU0xZ0xHZ3dIQUFBQUFFbEZUa1N1UW1DQyIgLz48L3N2Zz4=");
-    background-color: transparent;
-}
-.dropshadow-right {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMSI+PGRlZnM+PGZpbHRlciBpZD0iZGFya3JlYWRlci1pbWFnZS1maWx0ZXIiPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwLjI0OSAtMC42MTQgLTAuNjcyIDAuMDAwIDEuMDM1IC0wLjY0NiAwLjI4OCAtMC42NjQgMC4wMDAgMS4wMjAgLTAuNjM2IC0wLjYwOSAwLjI1MCAwLjAwMCAwLjk5NCAwLjAwMCAwLjAwMCAwLjAwMCAxLjAwMCAwLjAwMCIgLz48L2ZpbHRlcj48L2RlZnM+PGltYWdlIHdpZHRoPSIxOSIgaGVpZ2h0PSIxIiBmaWx0ZXI9InVybCgjZGFya3JlYWRlci1pbWFnZS1maWx0ZXIpIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUJNQUFBQUJDQVlBQUFBOFRwVmNBQUFBR1hSRldIUlRiMlowZDJGeVpRQkJaRzlpWlNCSmJXRm5aVkpsWVdSNWNjbGxQQUFBQUNWSlJFRlVlTnBpWkdCZ1VBRGl2MEQ4RDByL1JlTER4UDRqOGY4ajBReFFHc3dHQ0RBQWJFd1FBdXpsM3lvQUFBQUFTVVZPUks1Q1lJST0iIC8+PC9zdmc+");
-    background-color: transparent;
-}
-.dropshadow-bottom-right {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4yNDkgLTAuNjE0IC0wLjY3MiAwLjAwMCAxLjAzNSAtMC42NDYgMC4yODggLTAuNjY0IDAuMDAwIDEuMDIwIC0wLjYzNiAtMC42MDkgMC4yNTAgMC4wMDAgMC45OTQgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQk1BQUFBVENBWUFBQUJ5VURiTUFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBSXhKUkVGVWVOclVrbEVPd0NBSVE2dnpITHYvSlNmemg0UTRLTTU5amFUcEY4K0NGQURuMERYVUhaOGx4bFZRcjBHak9JSnh0MnJ3Y2dTbDFVd3liNFErcGFMZ1JwSmx6WS9STlprNDZhTGRDUnZUYSs0SlJETFlEa1FZakoxRWVoNHpEQzlBRXNHd2s4U0RlWTJSMHc4NGhncTduVlVRZ3lFNTFDWFlGc1RDV0Mwdlh6L2dFK0FmZFFzd0FIQ2hqNXFsWm41L0FBQUFBRWxGVGtTdVFtQ0MiIC8+PC9zdmc+");
-    background-color: transparent;
-}
-.dropshadow-bottom {
-    background-image: url("https://shikimori.one/assets/bubble/dropshadow/bottom.png");
-    background-color: transparent;
-}
-.dropshadow-bottom-left {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4yNDkgLTAuNjE0IC0wLjY3MiAwLjAwMCAxLjAzNSAtMC42NDYgMC4yODggLTAuNjY0IDAuMDAwIDEuMDIwIC0wLjYzNiAtMC42MDkgMC4yNTAgMC4wMDAgMC45OTQgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQk1BQUFBVENBWUFBQUJ5VURiTUFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBSDlKUkVGVWVOcThrNEVLd0NBSVJIWDMvOS9zWUJBVE1UMWpMQkFwdXVkbHBmSU9kWG5GNVhJTXhJd0d0bHZYUkNjZExJcjhYT0o4QjVOQ2xCV3lDR1BjWmNVc2M5YTVxNEFQRk1SeGFDQ0tUVHFGZ21pMmtFZFBZVk9nbmNLMm9Pd0NxZ1pyNXc3REoxQzY3R0RNaitCdmFBS2R3RnJOQ2V4TC9VL2pGbUFBVDFvSWZ3Rnk3NXdBQUFBQVNVVk9SSzVDWUlJPSIgLz48L3N2Zz4=");
-    background-color: transparent;
-}
-.dropshadow-left {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMSI+PGRlZnM+PGZpbHRlciBpZD0iZGFya3JlYWRlci1pbWFnZS1maWx0ZXIiPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwLjI0OSAtMC42MTQgLTAuNjcyIDAuMDAwIDEuMDM1IC0wLjY0NiAwLjI4OCAtMC42NjQgMC4wMDAgMS4wMjAgLTAuNjM2IC0wLjYwOSAwLjI1MCAwLjAwMCAwLjk5NCAwLjAwMCAwLjAwMCAwLjAwMCAxLjAwMCAwLjAwMCIgLz48L2ZpbHRlcj48L2RlZnM+PGltYWdlIHdpZHRoPSIxOSIgaGVpZ2h0PSIxIiBmaWx0ZXI9InVybCgjZGFya3JlYWRlci1pbWFnZS1maWx0ZXIpIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUJNQUFBQUJDQVlBQUFBOFRwVmNBQUFBR1hSRldIUlRiMlowZDJGeVpRQkJaRzlpWlNCSmJXRm5aVkpsWVdSNWNjbGxQQUFBQUI1SlJFRlVlTnBpWkVBQVJpaUdzWm1RYUJpYkdZblBqSVRCZklBQUF3QUR6Z0FpTXl2VmF3QUFBQUJKUlU1RXJrSmdnZz09IiAvPjwvc3ZnPg==");
-    background-color: transparent;
-}
-.dropshadow-top-left {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4yNDkgLTAuNjE0IC0wLjY3MiAwLjAwMCAxLjAzNSAtMC42NDYgMC4yODggLTAuNjY0IDAuMDAwIDEuMDIwIC0wLjYzNiAtMC42MDkgMC4yNTAgMC4wMDAgMC45OTQgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQk1BQUFBVENBWUFBQUJ5VURiTUFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBSGxKUkVGVWVOck0wa0VPd0NBSUJFQ1c4djgzOTlSRUZHU0pIbXBpeElNVEJFVCt1bkR6UFc0bWdFT2tuVm1GZ01WQUlCU1dRZWtKQXNxeVdXSnJObUFHM0owdGJnYTViVVROS2tnenJPcGVpSHl4a1EzSUlHV3dYVzFHd01XMkc4TGlpenFEUm1ZbFFaMFdWQnZ6RlFIb1lOVklqUHQ1QlJnQVo5WUEwcHNYRUNVQUFBQUFTVVZPUks1Q1lJST0iIC8+PC9zdmc+");
-    background-color: transparent;
+.dropshadow-top, .dropshadow-bottom, .dropshadow-right, .dropshadow-left, .dropshadow-top-left, .dropshadow-top-right, .dropshadow-bottom-left, .dropshadow-bottom-right {
+    filter: invert(1);
 }
 .item-mobile {
     color: rgb(189, 183, 175);
@@ -14710,7 +14681,7 @@ header.head .notice {
 }
 .p-user_rates-index .list-lines tr.edit-form form {
     background-image: initial;
-    background-color: rgb(30, 53, 22);
+    background-color: rgb(31, 33, 35);
     border-bottom-color: rgb(67, 72, 75);
     border-top-color: rgb(67, 72, 75);
 }
@@ -15131,55 +15102,13 @@ embed[type="application/pdf"][src="about:blank"] {
     filter: invert(100%) contrast(90%);
 }
 
-/* Modified styles */
-.b-link_button.dark {
-    border-color: rgb(62, 77, 93);
-}
-.b-anime_status_tag.other {
-    border-color: rgb(99, 115, 132);
-}
-.tooltip-arrow {
-    filter: invert(90%);
-}
-.tooltip-left .tooltip-arrow {
-    filter: invert(90%);
-}
-.l-top_menu-v2 .submenu {
-    border: none;
-}
-#dashboards_show
-    > section
-    > div:nth-child(1)
-    > div
-    > div:nth-child(2)
-    > div
-    > div.f-sections
-    > div.fc-headlines
-    > div:nth-child(2)
-    > div {
-    background-color: rgb(0, 45, 56);
+/* Modified elements */
+div.midheadline.blue.linkheadline {
+    background-color: rgb(10, 46, 56);
 }
 .icon.is-disabled {
     color: rgb(50, 50, 50) !important;
 }
-#user_rates_index
-    > section
-    > div:nth-child(1)
-    > div
-    > div.menu-slide-outer.x199
-    > div
-    > div
-    > div.b-collection_search
-    > div
-    > input {
-    background-color: rgb(24, 26, 27);
-}
-.p-user_rates-index .list-lines tr.edit-form form {
-    background-color: rgb(31, 33, 35);
-}
 .b-input select {
     background-color: rgb(24, 26, 27);
-}
-.l-top_menu-v2 .submenu > a:hover {
-    background-color: rgb(43, 47, 49);
 }
